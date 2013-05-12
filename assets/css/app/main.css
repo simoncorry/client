@@ -11,12 +11,15 @@
 
 html,
 body {
-    background:url('/assets/images/app/bg/bg-main.png') repeat;
-    background-size:60px !important;
+    background:rgb(255,255,255);
     width:100%;
     height:100%;
     margin:0px;
     padding:0px;
+    font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight:300;
+    color:rgb(17,17,17);
+    -webkit-font-smoothing:antialiased;
 }
 
 img {border:none; outline:none; border-style:none;}
@@ -25,16 +28,16 @@ a:focus,a:active {outline:none;}
 
 ::-moz-selection{background:rgba(56,151,160,0.6); color:#FFFFFF; text-shadow:none;}
 ::selection     {background:rgba(56,151,160,0.6); color:#FFFFFF; text-shadow:none;}
-z
+
 /* /// TOOL BELT /// */
 
 .hr {
     width:100%;   
     border-left:  1px solid rgba(38,38,38,0.0);
     border-right: 1px solid rgba(38,38,38,0.0);
-    border-top:   1px solid rgba(38,38,38,0.4);
-    border-bottom:1px solid rgba(250,250,250,0.1);
-    margin:0;
+    border-top:   1px solid rgba(38,38,38,0.0);
+    border-bottom:2px solid rgb(17,17,17);
+    margin:40px 0 20px 0;
     overflow:hidden;
 }
 
