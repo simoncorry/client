@@ -16,7 +16,6 @@ div#loading {
     box-sizing:        border-box;
     -webkit-transition:opacity 0.3s ease-in-out;
     transition:        opacity 0.3s ease-in-out;
-    
 }
 
 div#loading.active {
@@ -24,7 +23,7 @@ div#loading.active {
     opacity:1;
 }
 
-div#loading::after {
+div#loading div.circle {
     position:absolute;
     top:50%;
     left:50%;
@@ -40,11 +39,11 @@ div#loading::after {
 }
 
 @-webkit-keyframes loading {
-    0%   {-webkit-transform:rotate(0deg);}
-    100%  {-webkit-transform:rotate(360deg);}
+    from {-webkit-transform:rotate(0deg);}
+    to   {-webkit-transform:rotate(-360deg);}
 }
 
 @keyframes loading {
-    0%   {transform:rotate(0deg);}
-    100% {transform:rotate(-360deg);}
+    from {transform:rotate(0deg);}
+    to   {transform:rotate(-360deg);}
 }

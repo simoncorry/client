@@ -235,8 +235,8 @@ select::-ms-expand {display:none;} /* IE 10 Fix */
 /* Select */
 
 .ie9 form select {
-    padding:0 0 0 15px;
-    min-width:110%;
+    background-image:none;
+    padding:14px 15px;
 }
 
 .ie9 form select:hover,

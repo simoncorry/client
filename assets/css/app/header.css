@@ -28,14 +28,6 @@ div#logo.mask {
     mask:        url(/assets/images/app/logo.svg);
 }
 
-@-moz-document url-prefix() {
-    div#logo {
-        background:transparent url(/assets/images/app/logo-firefox.svg) center center no-repeat;
-        -webkit-animation:none;
-        animation:        none;
-    }
-}  
-
 @-webkit-keyframes logo {
     0%     {background-color:#269a7b;}
     6%     {background-color:#fdb913;}
@@ -144,4 +136,22 @@ and (max-width : 440px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
     a#logout {padding:10px 0;}
+}
+
+/* MOZILLA FIXES */
+
+@-moz-document url-prefix() {
+    div#logo {
+        background:transparent url(/assets/images/app/logo-firefox.svg) center center no-repeat;
+        -webkit-animation:none;
+        animation:        none;
+    }
+} 
+
+/* IE FIXES */
+
+.ie9 div#logo {
+    background:transparent url(/assets/images/app/logo-firefox.svg) center center no-repeat;
+    -webkit-animation:none;
+    animation:        none;
 }
