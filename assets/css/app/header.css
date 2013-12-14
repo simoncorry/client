@@ -2,156 +2,24 @@
 
 /* /// HEADER /// */
 
-section#header {
-    width:884px;
-    height:auto;
-    padding:45px 0;
-    border-bottom:2px solid rgb(17,17,17);
+section.header {
+    background:rgba(0,0,0,0.85);
+    width:100%;
+    min-width:1050px;
+    height:92px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:   border-box;
+    box-sizing:        border-box;
+}
+
+section.header div.wrapper_header {
+background:red;
+    width:970px;
+    height:100%;
     margin:0 auto;
-    overflow:hidden;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:   border-box;
-    box-sizing:        border-box;
-}
-
-div#logo {
-    float:left;
-    background-color:#269a7b;
-    width:136px;
-    height:38px;
-    -webkit-animation:logo 50s ease-in-out 3s infinite;
-    animation:        logo 50s ease-in-out 3s infinite;
-}
-
-div#logo.mask {
-    -webkit-mask:url(/assets/images/app/logo.svg);
-    mask:        url(/assets/images/app/logo.svg);
-}
-
-@-webkit-keyframes logo {
-    0%     {background-color:#269a7b;}
-    6%     {background-color:#fdb913;}
-    12%    {background-color:#f47b20;}
-    18%    {background-color:#6f1200;}
-    24%    {background-color:#e31937;}
-    30%    {background-color:#c60651;}
-    36%    {background-color:#004b8d;}
-    42%    {background-color:#38939b;}
-    48%    {background-color:#104432;}
-    54%    {background-color:#009b7a;}
-    60%    {background-color:#b06e0e;}
-    66%    {background-color:#f598aa;}
-    72%    {background-color:#a1a3a6;}
-    78%    {background-color:#a7a9ac;}
-    84%    {background-color:#231f20;}
-    90%    {background-color:#269a7b;}
-    100%   {background-color:#269a7b;}
-}
-
-@keyframes logo {
-    0%     {background-color:#269a7b;}
-    6%     {background-color:#fdb913;}
-    12%    {background-color:#f47b20;}
-    18%    {background-color:#6f1200;}
-    24%    {background-color:#e31937;}
-    30%    {background-color:#c60651;}
-    36%    {background-color:#004b8d;}
-    42%    {background-color:#38939b;}
-    48%    {background-color:#104432;}
-    54%    {background-color:#009b7a;}
-    60%    {background-color:#b06e0e;}
-    66%    {background-color:#f598aa;}
-    72%    {background-color:#a1a3a6;}
-    78%    {background-color:#a7a9ac;}
-    84%    {background-color:#231f20;}
-    90%    {background-color:#269a7b;}
-    100%   {background-color:#269a7b;}
-}
-
-a#logout {
-    float:right;
-    background:rgb(238,238,238);
-    width:136px;
-    height:32px;
-    padding-top:9px;
-    border-radius:1px;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:   border-box;
-    box-sizing:        border-box;
-    -webkit-transition:all 0.3s ease-in-out;
-    transition:        all 0.3s ease-in-out;
-    /* Text */
-    font-size:14px;
-    font-weight:bold;
-    text-align:center;
-    text-decoration:none;
-    text-transform:uppercase;
-    color:rgb(156,156,156);   
-}
-
-a#logout:hover {
-    background:rgb(156,156,156);
-    color:rgb(255,255,255);
 }
 
 /* RESPONSIVE ADJUSTMENTS */
 
-/* Height */
-/*
 @media only screen 
-and (max-height: 704px) {}
-*/
-
-/* Width */
-
-/*
-@media only screen 
-and (max-width : 1609px) {}
-*/
-
-@media only screen 
-and (max-width : 999px) {
-    section#header {width:664px;}
-}
-
-@media only screen 
-and (max-width : 747px) {
-    section#header {
-        width:100%;
-        padding:45px 20px; 
-    }
-}
-
-@media only screen 
-and (max-width : 440px) {
-    a#logout {
-        width:100px;
-        padding:10px 0;
-    }
-}
-
-/* Tablets Only */
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-    a#logout {padding:10px 0;}
-}
-
-/* MOZILLA FIXES */
-
-@-moz-document url-prefix() {
-    div#logo {
-        background:transparent url(/assets/images/app/logo-firefox.svg) center center no-repeat;
-        -webkit-animation:none;
-        animation:        none;
-    }
-} 
-
-/* IE FIXES */
-
-.ie9 div#logo {
-    background:transparent url(/assets/images/app/logo-firefox.svg) center center no-repeat;
-    -webkit-animation:none;
-    animation:        none;
-}
+and (max-width : 747px) {}
