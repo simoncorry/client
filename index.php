@@ -4,8 +4,8 @@
     <head>
         <title>Science &amp; Creativity</title>
         <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Welcome one and all to the new home of science and creativity.">
+        <meta name="keywords" content="simon corry, science &amp; creativity, user experience design, information architecture, design &amp; development">
         <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -20,31 +20,38 @@
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="/assets/css/lib/reset.min.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/main.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/nav.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/sidebar.css">
         <!-- JS -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="/assets/js/lib/modernizr.js"></script>
         <script type="text/javascript" src="/assets/js/lib/google-analytics.js"></script>
-        <script type="text/javascript" src="/assets/js/lib/sidebar-effects.js"></script>
+        <script type="text/javascript" src="/assets/js/app/sidebar.js"></script>
     </head>
     <body>
-        <!-- Slideout Container -->
-        <div id="st-container">
-            <!-- Menu -->
-			<nav id="st-menu">
-				<h2>Menu</h2>
+        <!-- Site Wrapper -->
+        <div id="wrapper_site">
+            <!-- Main Menu -->
+			<nav id="sidebar_main" data-sidebar="sidebar_main" class="sidebar_pusher">
+				<ul>
+					<li><a href="#">Test</a></li>
+				</ul>
+			</nav>
+			<!-- Social Menu -->
+			<nav id="sidebar_social" data-sidebar="sidebar_social" class="sidebar_pusher">
 				<ul>
 					<li><a href="#">Test</a></li>
 				</ul>
 			</nav>
 			<!-- Content Wrapper -->
-			<div id="st-pusher">
-				<div id="st-trigger-effects" class="st-content">
+			<div id="content_pusher">
+			    <div class="content_shroud"></div>
+				<div id="wrapper_content">				    
 				    <!-- Content -->
-				     
-				    <button data-effect="st-effect-12">Open door</button>
-				    
-				    <!-- /Content -->
+				    <div style="z-index:2; position:fixed; top:100px; width:100%; pointer-events:none;">
+    				    <a class="sidebar_trigger" data-trigger="sidebar_main" style="pointer-events:all; display:block; width:80px; padding:20px; margin:0 auto;">Open door</a>
+    				    <a class="sidebar_trigger" data-trigger="sidebar_social" style="pointer-events:all; display:block; width:80px; padding:20px; margin:0 auto;">Open door</a>
+				    </div>
+				    <!-- /Content -->							
 				</div>
 			</div>
 		</div>
