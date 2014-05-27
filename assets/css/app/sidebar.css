@@ -127,12 +127,6 @@
 }
 
 
-/* FALLBACKS */
-
-.no-csstransforms3d #content_pusher,
-.no-js #content_pusher {padding-left:300px;}
-
-
 /* RESPONSIVE ADJUSTMENTS */
 
 /* CSS for high-resolution devices */

@@ -19,15 +19,19 @@
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/lib/icons/apple-touch-icon-144x144-precomposed.png">
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="/assets/css/lib/reset.min.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/main.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/sidebar.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/header.css">
         <!-- JS -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/lib/modernizr.js"></script>
-        <script type="text/javascript" src="/assets/js/lib/google-analytics.js"></script>
-        <script type="text/javascript" src="/assets/js/app/sidebar.js"></script>
+        <script src="/assets/js/lib/modernizr.js"></script>
+        <script src="/assets/js/lib/google-analytics.js"></script>
+        <script src="/assets/js/lib/jquery.preloader-1.2.js"></script>
+        <script src="/assets/js/app/plugins.js"></script>
+        <script src="/assets/js/app/sidebar.js"></script>
     </head>
-    <body>
+    <body id="preloader">
         <!-- Site Wrapper -->
         <div id="wrapper_site">
             <!-- Main Menu -->
@@ -47,10 +51,10 @@
 			    <div class="content_shroud"></div>
 				<div id="wrapper_content">				    
 				    <!-- Content -->
-				    <div style="z-index:2; position:fixed; top:100px; width:100%; pointer-events:none;">
+				    <section class="header">
     				    <a class="sidebar_trigger" data-trigger="sidebar_main" style="pointer-events:all; display:block; width:80px; padding:20px; margin:0 auto;">Open door</a>
     				    <a class="sidebar_trigger" data-trigger="sidebar_social" style="pointer-events:all; display:block; width:80px; padding:20px; margin:0 auto;">Open door</a>
-				    </div>
+				    </section>
 				    <!-- /Content -->							
 				</div>
 			</div>
