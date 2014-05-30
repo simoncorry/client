@@ -26,8 +26,6 @@
     left:0;
     height:100%;
     -webkit-backface-visibility:hidden;
-    -webkit-transform-style:preserve-3d;
-            transform-style:preserve-3d;
     -webkit-transition:-webkit-transform 0.5s;
     	    transition:        transform 0.5s;
 }
@@ -40,6 +38,7 @@
     height:100%;
     content:'';
     display:none;
+    cursor:pointer;
 }
 
 .sidebar_pusher {
@@ -128,6 +127,15 @@
 
 
 /* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 747px) {
+    #sidebar_social {width:300px;}
+    #content_pusher.sidebar_social {
+        -webkit-transform:translate3d(300px,0,0);
+                transform:translate3d(300px,0,0);
+    }
+}
 
 /* CSS for high-resolution devices */
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),

@@ -1,4 +1,251 @@
 @charset "UTF-8";
 
-/* */
+/* Header */
 
+.header {
+    z-index:999999;
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:40px 40px 0;
+    pointer-events:none;    
+}
+
+.header .cols {pointer-events:all;}
+.header .lcol {float:left;}
+.header .rcol {float:right;}
+
+/* Buttons */
+
+.btn_header {
+    float:left;
+    position:relative;
+    background-color:rgb(229,225,214);
+    border:5px solid rgb(242,239,223);
+    box-shadow:1px 1px 0 rgba(180,180,180,0.8), -1px -1px 0 rgba(180,180,180,0.0);
+    cursor:pointer;
+    -webkit-transition:    border 0.2s ease-in-out,
+                       box-shadow 0.2s ease-in-out;
+    	    transition:    border 0.2s ease-in-out,
+    	               box-shadow 0.2s ease-in-out;
+}
+.no-touch .btn_header:hover {border-color:rgb(248,245,229);}
+.btn_header.btn_active {
+    border-color:rgb(248,245,229);
+    box-shadow:1px 1px 0 rgba(180,180,180,0.0), -1px -1px 0 rgba(180,180,180,0.6);
+}
+
+
+/* Btn - Social */
+
+#btn_social {
+    width:60px;
+    height:60px;
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+            box-sizing:border-box;
+}
+
+#logo {
+    position:relative;
+    overflow:hidden;
+}
+
+.logo_pixel {
+    float:left;
+    background-color:rgb(40,55,64);
+    width:10px;
+    height:10px;
+    -webkit-transition:opacity    0.6s ease-in-out,
+                       visibility 0.6s ease-in-out;
+    	    transition:opacity    0.6s ease-in-out,
+    	               visibility 0.6s ease-in-out;
+}
+
+.logo_pixel.p9 {opacity:0.9;}
+.logo_pixel.p8 {opacity:0.8;}
+.logo_pixel.p6 {opacity:0.6;}
+
+.no-touch #btn_social:hover .logo_pixel {
+    opacity:0;
+    visibility:hidden;
+    -webkit-transition-duration:1.0s;
+            transition-duration:1.0s;
+    -webkit-transition-delay:1.2s;
+            transition-delay:1.2s;
+}
+
+.btn_active .logo_pixel {
+    opacity:0 !important;
+    visibility:hidden !important;
+    -webkit-transition-duration:0.3s !important;
+            transition-duration:0.3s !important;
+    -webkit-transition-delay:0.0s !important;
+            transition-delay:0.0s !important;
+}
+
+.moon,
+.ship,
+.exhaust,
+.exhaust::after {
+    z-index:1;
+    position:absolute;
+    width:0;
+    height:0;
+    pointer-events:none !important;
+    -webkit-backface-visibility:hidden;
+    -webkit-transition:-webkit-transform 0.6s ease-in-out,
+                       opacity           0.6s ease-in-out,
+                       visibility        0.6s ease-in-out;
+    	    transition:transform         0.6s ease-in-out,
+    	               opacity           0.6s ease-in-out,
+    	               visibility        0.6s ease-in-out;
+}
+.ship {
+    bottom:20px;
+    left:20px;
+    border-left:  5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom:5px solid rgb(242,239,223);
+}
+.moon {
+    top:10px; left:10px;
+    background-color:rgb(242,239,223);
+    width:5px;
+    height:5px;
+}
+.exhaust {
+    bottom:0px;
+    left:10px;
+    border-left:  15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom:15px solid rgb(242,239,223);
+}
+.exhaust::after {
+    top:10px;
+    left:-5px;
+    opacity:0.6;
+    border-left:  5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom:5px solid rgb(40,55,64);
+	content:'';
+}
+
+.no-touch #btn_social:hover .ship {
+    -webkit-transition-duration:1.0s;
+            transition-duration:1.0s;
+    -webkit-transition-delay:1.3s;
+            transition-delay:1.3s;
+    -webkit-transform:translate3d(0,-60px,0);
+    	    transform:translate3d(0,-60px,0);
+}
+.no-touch #btn_social:hover .moon {
+    -webkit-transition-duration:1.0s;
+            transition-duration:1.0s;
+    -webkit-transition-delay:0.4s;
+            transition-delay:0.4s;
+    -webkit-transform:translate3d(0,8px,0);
+    	    transform:translate3d(0,8px,0);
+    opacity:0;
+}
+.no-touch #btn_social:hover .exhaust,
+.no-touch #btn_social:hover .exhaust::after {
+    -webkit-transition-duration:1.0s;
+            transition-duration:1.0s;
+    -webkit-transform:translate3d(0,8px,0);
+    	    transform:translate3d(0,8px,0);
+    opacity:0;
+}
+
+.btn_active .moon,
+.btn_active .ship,
+.btn_active .exhaust,
+.btn_active .exhaust::after {
+    opacity:0 !important;
+    visibility:hidden !important;
+    -webkit-transition-duration:0.3s !important;
+            transition-duration:0.3s !important;
+    -webkit-transition-delay:0.0s !important;
+            transition-delay:0.0s !important;
+}
+
+/* Btn - Main */
+
+#btn_main {
+    width:41px;
+    height:41px;
+}
+
+.bars {
+    position:absolute;
+    left:8px;
+    background-color:rgb(186,182,164);
+    width:15px;
+    height:3px;
+    -webkit-transition:-webkit-transform 0.6s ease-in-out,
+                       background-color  0.6s ease-in-out,
+                       opacity           0.3s ease-in-out;
+    	    transition:transform         0.6s ease-in-out,
+    	               background-color  0.6s ease-in-out,
+                       opacity           0.3s ease-in-out;
+}
+.bar_top    {top:8px;}
+.bar_middle {top:14px;}
+.bar_bottom {top:20px;}
+
+.btn_active .bars {background-color:rgb(173,115,115);}
+.btn_active .bar_top {
+    -webkit-transform:translate3d(0,6px,0) rotate3d(0,0,1,-45deg);
+    	    transform:translate3d(0,6px,0) rotate3d(0,0,1,-45deg);
+    
+}
+.btn_active .bar_middle {opacity:0;}
+.btn_active .bar_bottom {
+    -webkit-transform:translate3d(0,-6px,0) rotate3d(0,0,1,45deg);
+    	    transform:translate3d(0,-6px,0) rotate3d(0,0,1,45deg);
+}
+
+/* Button Message */
+
+.btn_messages {
+    position:absolute;
+    left:75px; top:-5px;
+    background-color:rgb(229,225,214);
+    max-height:60px;
+    padding:10px 20px;
+    border:5px solid rgb(242,239,223);
+    box-shadow:1px 1px 0 rgba(180,180,180,0.8), -1px -1px 0 rgba(180,180,180,0.0);
+    pointer-events:none;
+    -webkit-backface-visibility:hidden;
+    -webkit-transform-origin:-50px 30px;
+    -webkit-transition:all 0.6s ease-in-out;
+    	    transition:all 0.6s ease-in-out;
+}
+.btn_messages::after {
+    position:absolute;
+    bottom:20px;
+    left:-13px;
+	border-right: 8px solid rgb(242,239,223);
+	border-top:   6px solid transparent;
+	border-bottom:6px solid transparent;
+	content:'';
+}
+
+.message_1 {
+    width:212px;
+    opacity:1;
+    visibility:visible;
+}
+.no-touch #btn_social:hover .message_1,
+.btn_active .message_1 {
+    opacity:0 !important;
+    visibility:hidden !important;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 747px) {
+    .header {padding:20px 20px 0;}
+    .btn_messages {display:none;}
+}
