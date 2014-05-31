@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* See http://bit.ly/1eMgki5 for advice regarding REM units */
+
+html {font-size:62.5% !important;}
+
+body {
+    font-family:'Inconsolata',sans-serif;
+    font-style:normal;
+    font-weight:700;
+    font-size:1.6rem;
+    line-height:3.0rem;
+    color:rgb(104,107,109);
+    -webkit-font-smoothing:antialiased;
+}
+
+/* Headers */
+
+h1,h2,h3,h4 {
+    font-family:'Inconsolata',sans-serif;
+    font-weight:700;
+    margin:0;
+}
+
+/* Body */
+
+p, .btn_message, .tooltip_footer {
+    font-family:'Inconsolata',sans-serif;
+    font-size:1.6rem;
+    font-weight:700;
+    color:rgb(104,107,109);
+    text-shadow:1px 1px 0 rgb(242,239,223);
+}
+
+strong,b {font-weight:700;}
+

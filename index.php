@@ -22,7 +22,7 @@
         
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="/assets/css/lib/reset.min.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css">
+        <!-- <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css"> -->
         <link type="text/css" rel="stylesheet" href="/assets/css/app/main.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/typography.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/tooltips.css">
@@ -35,31 +35,33 @@
         <script src="/assets/js/lib/google-analytics.js"></script>
         <script src="/assets/js/lib/jquery.preloader-1.2.js"></script>
         <script src="/assets/js/app/plugins.js"></script>
+        <script src="/assets/js/app/mobile_check.js"></script>
         <script src="/assets/js/app/sidebar.js"></script>
     </head>
-    <body id="preloader">
+    <!-- <body id="preloader"> -->
+    <body>
         <!-- Site Wrapper -->
         <div id="wrapper_site">
             <!-- Main Menu -->
 			<nav id="sidebar_main" data-sidebar="sidebar_main" class="sidebar_pusher">
 				<ul>
-					<li><a href="#">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
 				</ul>
 			</nav>
 			<!-- Social Menu -->
 			<nav id="sidebar_social" data-sidebar="sidebar_social" class="sidebar_pusher">
 				<ul>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="#" target="_self">Test</a></li>
 				</ul>
 			</nav>
 			<!-- Content Wrapper -->
@@ -96,9 +98,9 @@
     				    <div class="cols rcol">
     				        <nav id="nav_network">
     				            <ul>
-        				            <li><a href="http://twitter.com/simoncorry"  target="_blank" data-tooltip="Twitter"  class="tooltip tooltip_footer twitter">Read Tweets by Simon Corry</a></li>
-        				            <li><a href="http://github.com/simoncorry"   target="_blank" data-tooltip="Github"   class="tooltip tooltip_footer github">See code examples by Simon Corry</a></li>
-        				            <li><a href="http://dribbble.com/simoncorry" target="_blank" data-tooltip="Dribbble" class="tooltip tooltip_footer dribbble">View project shots by Simon Corry</a></li>
+        				            <li><a href="http://twitter.com/simoncorry"  target="_blank" data-tooltip="Twitter"  class="tooltip tooltip_footer link twitter">Read Tweets by Simon Corry</a></li>
+        				            <li><a href="http://github.com/simoncorry"   target="_blank" data-tooltip="Github"   class="tooltip tooltip_footer link github">See code examples by Simon Corry</a></li>
+        				            <li><a href="http://dribbble.com/simoncorry" target="_blank" data-tooltip="Dribbble" class="tooltip tooltip_footer link dribbble">View project shots by Simon Corry</a></li>
     				            </ul>
     				        </nav>
     				    </div>
