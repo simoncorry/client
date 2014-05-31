@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <!--[if IE 9]><html lang="en" class="ie9 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
 <html lang="en" class="no-js">
-    <head>
-        <title>Science &amp; Creativity</title>
+    <head prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage">
+        <title>Simon Corry</title>
         <meta charset="utf-8">
-        <meta name="description" content="Welcome one and all to the new home of science and creativity.">
+        <meta name="description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments.">
         <meta name="keywords" content="simon corry, science &amp; creativity, user experience design, information architecture, design &amp; development">
         <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!-- Open Graph Data -->
+        <meta property="og:locale" content="en_US">
+        <meta property="og:title" content="Simon Corry">
+        <meta property="og:type" content="profile">
+        <meta property="og:image" content="http://client.simoncorry.com/assets/images/lib/icons/facebook-google.png">
+        <meta property="og:url" content="http://client.simoncorry.com/">
+        <meta property="og:site_name" content="Simon Corry">
+        <meta property="og:description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments.">
+        <meta property="fb:admins" content="512859885"/>
+        <!-- Twitter Card Data --> 
+        <meta name="twitter:card" content="summary"> 
+        <meta name="twitter:site" content="@simoncorry"> 
+        <meta name="twitter:title" content="Checkout Awesome Pixels!"> 
+        <meta name="twitter:description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments."> 
+        <meta name="twitter:creator" content="@simoncorry">
+        <meta name="twitter:domain" content="http://simoncorry.com">
+        <meta name="twitter:image" content="http://client.simoncorry.com/assets/images/lib/icons/facebook-google.png">
+        <!-- Schema Markup --> 
+        <meta itemprop="name" content="Simon Corry"> 
+        <meta itemprop="description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments."> 
+        <meta itemprop="image" content="http://client.simoncorry.com/assets/images/lib/icons/facebook-google.png">
+        <!-- Google Markup --> 
+        <link rel="author" href=" https://plus.google.com/+SimonCorry"/>
+        <link rel="publisher" href="https://plus.google.com/+SimonCorry"/>
         <!-- Icons -->
         <link rel="icon" type="image/x-icon" href="/assets/images/lib/icons/favicon.ico">
         <link rel="shortcut icon" type="image/x-icon" href="/assets/images/lib/icons/favicon.ico">
         <link rel="apple-touch-icon-precomposed" href="/assets/images/lib/icons/apple-touch-icon-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/lib/icons/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/lib/icons/apple-touch-icon-76x76-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/lib/icons/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/lib/icons/apple-touch-icon-120x120-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/lib/icons/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/lib/icons/apple-touch-icon-152x152-precomposed.png">
         <!-- Google Fonts -->
         <link type='text/css' rel='stylesheet' href='http://fonts.googleapis.com/css?family=Inconsolata:700,400'>
-        
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="/assets/css/lib/reset.min.css">
         <!-- <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css"> -->
@@ -36,6 +62,7 @@
         <script src="/assets/js/lib/jquery.preloader-1.2.js"></script>
         <script src="/assets/js/app/plugins.js"></script>
         <script src="/assets/js/app/mobile_check.js"></script>
+        <script src="/assets/js/app/scripts.js"></script>
         <script src="/assets/js/app/sidebar.js"></script>
     </head>
     <!-- <body id="preloader"> -->
