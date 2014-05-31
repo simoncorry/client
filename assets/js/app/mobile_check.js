@@ -9,7 +9,8 @@ $(function() {
   eventtype = mobilecheck() ? 'touchstart' : 'click';
   
   // Check for Event Type on Href Links
-  $('a[href]').on(eventtype, function(e) {
+  /* $('a[href]').on(eventtype, function(e) { */
+  $('.mobile_check').on(eventtype, function(e) {
     e.preventDefault();
     a_href   = $(this).attr('href');
     a_target = $(this).attr('target');

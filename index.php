@@ -20,8 +20,8 @@
         <meta property="og:description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments.">
         <meta property="fb:admins" content="512859885"/>
         <!-- Twitter Card Data --> 
-        <meta name="twitter:card" content="summary"> 
-        <meta name="twitter:site" content="@simoncorry"> 
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@simoncorry">
         <meta name="twitter:title" content="Checkout Awesome Pixels!"> 
         <meta name="twitter:description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments."> 
         <meta name="twitter:creator" content="@simoncorry">
@@ -48,8 +48,9 @@
         <link type='text/css' rel='stylesheet' href='http://fonts.googleapis.com/css?family=Inconsolata:700,400'>
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="/assets/css/lib/reset.min.css">
-        <!-- <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css"> -->
+        <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/main.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/ajax_loader.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/typography.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/tooltips.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/sidebar.css">
@@ -64,31 +65,42 @@
         <script src="/assets/js/app/mobile_check.js"></script>
         <script src="/assets/js/app/scripts.js"></script>
         <script src="/assets/js/app/sidebar.js"></script>
+        <script src="/assets/js/app/ajax.js"></script>
     </head>
-    <!-- <body id="preloader"> -->
-    <body>
+    <body id="preloader">
+    <!-- <body> -->
         <!-- Site Wrapper -->
         <div id="wrapper_site">
             <!-- Main Menu -->
 			<nav id="sidebar_main" data-sidebar="sidebar_main" class="sidebar_pusher">
 				<ul>
-					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="home.html" target="_self" class="ajax_load">Home</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
 				</ul>
 			</nav>
-			<!-- Social Menu -->
-			<nav id="sidebar_social" data-sidebar="sidebar_social" class="sidebar_pusher">
+			<!-- Stream Menu -->
+			<nav id="sidebar_stream" data-sidebar="sidebar_stream" class="sidebar_pusher">
 				<ul>
-					<li><a href="#" target="_self">Test</a></li>
-					<li><a href="#" target="_self">Test</a></li>
-					<li><a href="#" target="_self">Test</a></li>
-					<li><a href="#" target="_self">Test</a></li>
-					<li><a href="#" target="_self">Test</a></li>
-					<li><a href="#" target="_self">Test</a></li>
-					<li><a href="#" target="_self">Test</a></li>
-					<li><a href="#" target="_self">Test</a></li>
-					<li><a href="#" target="_self">Test</a></li>
-					<li><a href="#" target="_self">Test</a></li>
-					<li><a href="#" target="_self">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
 				</ul>
 			</nav>
 			<!-- Content Wrapper -->
@@ -98,7 +110,7 @@
 				    <!-- Header -->
 				    <section class="header clearfix">
     				    <div class="cols lcol">
-        				    <a id="btn_social" class="btn_header sidebar_trigger" data-trigger="sidebar_social">
+        				    <a id="btn_social" class="btn_header sidebar_trigger" data-trigger="sidebar_stream">
         				        <div id="logo">
             				        <? $a = array(9,8,6,8,9,8,9,8,9,8,6,8,9,8,6,8,9,8,9,8,9,8,6,8,9);
                                         for( $i = 0; $i < count($a); $i++ ) : ?>
@@ -122,7 +134,19 @@
     				        </a>
     				    </div>
 				    </section>
-				    <!-- Header -->
+				    <!-- Ajax / Main Content -->
+                    <div class="ajax_loader">
+                        <div class="ajax_content">
+                            <div class="square_1"></div>
+                            <div class="square_2"></div>
+                            <div class="square_3"></div>
+                            <div class="square_4"></div>
+                        </div>
+                    </div>
+                    <div class="ajax_page">
+                        <?php /* Home */ include_once($_SERVER['DOCUMENT_ROOT']."/home.html"); ?>
+                    </div>
+				    <!-- Footer -->
 				    <section class="footer clearfix">
 				        <div class="cols lcol">
 				            <h3>Footer Links</h3>
@@ -130,9 +154,9 @@
     				    <div class="cols rcol">
     				        <nav id="nav_network">
     				            <ul>
-        				            <li><a href="http://twitter.com/simoncorry"  target="_blank" data-tooltip="Twitter"  class="tooltip tooltip_footer link twitter">Read Tweets by Simon Corry</a></li>
-        				            <li><a href="http://github.com/simoncorry"   target="_blank" data-tooltip="Github"   class="tooltip tooltip_footer link github">See code examples by Simon Corry</a></li>
-        				            <li><a href="http://dribbble.com/simoncorry" target="_blank" data-tooltip="Dribbble" class="tooltip tooltip_footer link dribbble">View project shots by Simon Corry</a></li>
+        				            <li><a href="http://twitter.com/simoncorry"  target="_blank" data-tooltip="Twitter"  class="mobile_check tooltip tooltip_footer twitter">Read Tweets by Simon Corry</a></li>
+        				            <li><a href="http://github.com/simoncorry"   target="_blank" data-tooltip="Github"   class="mobile_check tooltip tooltip_footer github">See code examples by Simon Corry</a></li>
+        				            <li><a href="http://dribbble.com/simoncorry" target="_blank" data-tooltip="Dribbble" class="mobile_check tooltip tooltip_footer dribbble">View project shots by Simon Corry</a></li>
     				            </ul>
     				        </nav>
     				    </div>
