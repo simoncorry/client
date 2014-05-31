@@ -154,9 +154,9 @@
     				    <div class="cols rcol">
     				        <nav id="nav_network">
     				            <ul>
-        				            <li><a href="http://twitter.com/simoncorry"  target="_blank" data-tooltip="Twitter"  class="mobile_check tooltip tooltip_footer twitter">Read Tweets by Simon Corry</a></li>
-        				            <li><a href="http://github.com/simoncorry"   target="_blank" data-tooltip="Github"   class="mobile_check tooltip tooltip_footer github">See code examples by Simon Corry</a></li>
-        				            <li><a href="http://dribbble.com/simoncorry" target="_blank" data-tooltip="Dribbble" class="mobile_check tooltip tooltip_footer dribbble">View project shots by Simon Corry</a></li>
+        				            <li><a href="http://twitter.com/simoncorry"  target="_blank" data-tooltip="Twitter"  class="link tooltip tooltip_footer twitter">Read Tweets by Simon Corry</a></li>
+        				            <li><a href="http://github.com/simoncorry"   target="_blank" data-tooltip="Github"   class="link tooltip tooltip_footer github">See code examples by Simon Corry</a></li>
+        				            <li><a href="http://dribbble.com/simoncorry" target="_blank" data-tooltip="Dribbble" class="link tooltip tooltip_footer dribbble">View project shots by Simon Corry</a></li>
     				            </ul>
     				        </nav>
     				    </div>
