@@ -24,6 +24,10 @@
     border:5px solid rgb(242,239,223);
     box-shadow:1px 1px 0 rgba(180,180,180,0.8), -1px -1px 0 rgba(180,180,180,0.0);
     cursor:pointer;
+    -webkit-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+            user-select:none;
     -webkit-transition:    border 0.2s ease-in-out,
                        box-shadow 0.2s ease-in-out;
     	    transition:    border 0.2s ease-in-out,
@@ -174,6 +178,10 @@
 #btn_main {
     width:41px;
     height:41px;
+    -webkit-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+            user-select:none;
 }
 
 .bars {

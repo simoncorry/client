@@ -82,7 +82,9 @@
                                     <div class="exhaust"></div>
                                     <div class="bg_image"></div>
         				        </div>
-        				        <div class="btn_messages message_1">Science &amp; Creativity</div>
+        				        <div class="btn_messages message_1">
+        				            <h1>Science &amp; Creativity</h1>
+        				        </div>
         				    </a>       				    
     				    </div>
     				    <div class="cols rcol">
@@ -95,6 +97,9 @@
 				    </section>
 				    <!-- Header -->
 				    <section class="footer clearfix">
+				        <div class="cols lcol">
+				            <h3>Footer Links</h3>
+				        </div>
     				    <div class="cols rcol">
     				        <nav id="nav_network">
     				            <ul>

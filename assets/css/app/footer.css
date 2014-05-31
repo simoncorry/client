@@ -15,12 +15,20 @@
 .footer .lcol {float:left;}
 .footer .rcol {float:right;}
 
+.footer h3 {visibility:hidden; pointer-events:none;}
+
 /* Network Links */
 
-#nav_network {list-style-type:none;}
+#nav_network {
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+}
 
 #nav_network li {
     display:inline-block;
+    list-style-type:none;
     margin-left:6px;
 }
 #nav_network li:first-of-type {margin-left:0;}
