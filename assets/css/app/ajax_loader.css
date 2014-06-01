@@ -5,18 +5,16 @@
 .ajax_page {
     opacity:1;
     visibility:visible;
-    -webkit-transition:opacity    0.3s ease-in-out,
-                       visibility 0.3s ease-in-out;
-    	    transition:opacity    0.3s ease-in-out,
-    	               visibility 0.3s ease-in-out;
+    -webkit-transition:opacity    0.6s 0.6s ease-in-out,
+                       visibility 0.6s 0.6s ease-in-out;
+    	    transition:opacity    0.6s 0.6s ease-in-out,
+    	               visibility 0.6s 0.6s ease-in-out;
 }
 .remove {
     opacity:0;
     visibility:hidden;
-    -webkit-transition:opacity    0.3s ease-in-out,
-                       visibility 0.3s ease-in-out;
-    	    transition:opacity    0.3s ease-in-out,
-    	               visibility 0.3s ease-in-out;
+    -webkit-transition-delay:0s !important;
+            transition-delay:0s !important;
 }
 
 /* Ajax Loader */
@@ -162,4 +160,27 @@
     75%  {opacity:1.0;}
     76%  {opacity:0.2;}
     to   {opacity:0.2;}
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 747px) {
+    .ajax_loader {
+    	-webkit-transform:scale3d(1,1,1);
+    	        transform:scale3d(1,1,1);
+    }
+    .ajax_content {
+        top:auto; bottom:20px; left:20px; right:auto;
+        width:30px;
+        height:30px;
+        margin:0;
+    }
+    .ajax_content .square_1,
+    .ajax_content .square_2,
+    .ajax_content .square_3,
+    .ajax_content .square_4 {
+        width:13px;
+        height:13px;
+    }
 }

@@ -74,33 +74,33 @@
             <!-- Main Menu -->
 			<nav id="sidebar_main" data-sidebar="sidebar_main" class="sidebar_pusher">
 				<ul>
-					<li><a href="home.html" target="_self" class="ajax_load">Home</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="home.html" class="ajax_load">Home</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
 				</ul>
 			</nav>
 			<!-- Stream Menu -->
 			<nav id="sidebar_stream" data-sidebar="sidebar_stream" class="sidebar_pusher">
 				<ul>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
-					<li><a href="test.html" target="_self" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
+					<li><a href="test.html" class="ajax_load">Test</a></li>
 				</ul>
 			</nav>
 			<!-- Content Wrapper -->
@@ -154,6 +154,7 @@
     				    <div class="cols rcol">
     				        <nav id="nav_network">
     				            <ul>
+        				            <li><a href="#" data-tooltip="Share" class="tooltip tooltip_footer share">Share this site for Simon Corry</a></li>
         				            <li><a href="http://twitter.com/simoncorry"  target="_blank" data-tooltip="Twitter"  class="link tooltip tooltip_footer twitter">Read Tweets by Simon Corry</a></li>
         				            <li><a href="http://github.com/simoncorry"   target="_blank" data-tooltip="Github"   class="link tooltip tooltip_footer github">See code examples by Simon Corry</a></li>
         				            <li><a href="http://dribbble.com/simoncorry" target="_blank" data-tooltip="Dribbble" class="link tooltip tooltip_footer dribbble">View project shots by Simon Corry</a></li>
