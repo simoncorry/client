@@ -39,7 +39,6 @@
     box-shadow:1px 1px 0 rgba(180,180,180,0.0), -1px -1px 0 rgba(180,180,180,0.6);
 }
 
-
 /* Btn - Social */
 
 #btn_social {
@@ -51,8 +50,26 @@
 }
 
 #logo {
-    position:relative;
+    z-index:2;
+    position:absolute;
+    background-color:rgb(229,225,214);
     overflow:hidden;
+    -webkit-transition:opacity    0.6s ease-in-out,
+                       visibility 0.6s ease-in-out;
+    	    transition:opacity    0.6s ease-in-out,
+    	               visibility 0.6s ease-in-out;
+}
+.no-touch #btn_social:hover #logo {
+    opacity:0;
+    visibility:hidden;
+    -webkit-transition-duration:0.6s;
+            transition-duration:0.6s;
+}
+.btn_active #logo {
+    opacity:0 !important;
+    visibility:hidden !important;
+    -webkit-transition-duration:0.3s !important;
+            transition-duration:0.3s !important;
 }
 
 .logo_pixel {
@@ -60,31 +77,12 @@
     background-color:rgb(40,55,64);
     width:10px;
     height:10px;
-    -webkit-transition:opacity    0.6s ease-in-out,
-                       visibility 0.6s ease-in-out;
-    	    transition:opacity    0.6s ease-in-out,
-    	               visibility 0.6s ease-in-out;
+    
 }
 
 .logo_pixel.p9 {opacity:0.9;}
 .logo_pixel.p8 {opacity:0.8;}
 .logo_pixel.p6 {opacity:0.6;}
-
-.no-touch #btn_social:hover .logo_pixel {
-    opacity:0;
-    visibility:hidden;
-    -webkit-transition-duration:0.6s;
-            transition-duration:0.6s;
-}
-
-.btn_active .logo_pixel {
-    opacity:0 !important;
-    visibility:hidden !important;
-    -webkit-transition-duration:0.3s !important;
-            transition-duration:0.3s !important;
-    -webkit-transition-delay:0.0s !important;
-            transition-delay:0.0s !important;
-}
 
 .moon,
 .ship,
@@ -157,6 +155,61 @@
 .btn_active .exhaust::after {
     opacity:0 !important;
     visibility:hidden !important;
+}
+
+#broadcast,
+.satellite,
+.wave_1,
+.wave_2 {
+    position:absolute;
+    background:center center no-repeat;
+    width:50px;
+    height:50px;
+}
+
+#broadcast {z-index:1;}
+
+.satellite {
+    z-index:1;
+    background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiPjxwYXRoIGZpbGw9IiM2ODZCNkQiIGQ9Ik0zMC43LDM4LjhjMCwwLjctMC41LDEuMi0xLjIsMS4yaC05Yy0wLjcsMC0xLjItMC41LTEuMi0xLjJzMC41LTEuMiwxLjItMS4yaDMuM3YtMTEJYy0xLTAuNS0xLjctMS41LTEuNy0yLjZjMC0xLjYsMS4zLTIuOSwyLjktMi45czIuOSwxLjMsMi45LDIuOWMwLDEuMi0wLjcsMi4yLTEuNywyLjZ2MTFoMy4zQzMwLjIsMzcuNiwzMC43LDM4LjEsMzAuNywzOC44eiIvPjwvc3ZnPg==');
+}
+
+.wave_1 {
+    background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiPjxwYXRoIGZpbGw9IiM2ODZCNkQiIGQ9Ik0yNSwxNS44Yy00LjUsMC04LjIsMy43LTguMiw4LjJjMCwyLjIsMC45LDQuMywyLjQsNS44YzAuNSwwLjUsMS4yLDAuNSwxLjcsMGMwLjUtMC41LDAuNS0xLjIsMC0xLjcJYy0xLjEtMS4xLTEuNy0yLjYtMS43LTQuMWMwLTMuMiwyLjYtNS44LDUuOC01LjhzNS44LDIuNiw1LjgsNS44YzAsMS41LTAuNiwzLTEuNyw0LjFjLTAuNSwwLjUtMC41LDEuMiwwLDEuNyBjMC4yLDAuMiwwLjUsMC40LDAuOSwwLjRjMC4zLDAsMC42LTAuMSwwLjktMC40YzEuNi0xLjUsMi40LTMuNiwyLjQtNS44QzMzLjIsMTkuNCwyOS41LDE1LjgsMjUsMTUuOHoiLz48L3N2Zz4=');
+    -webkit-transition:all 0.3s ease-in-out;
+    	    transition:all 0.3s ease-in-out;
+    -webkit-animation:wave_1 2s infinite;
+            animation:wave_1 2s infinite;
+}
+
+@-webkit-keyframes wave_1 {
+    from {opacity:0;}
+    50%  {opacity:1;}
+    to   {opacity:0;}
+}
+
+@keyframes wave_1 {
+    from {opacity:0;}
+    50%  {opacity:1;}
+    to   {opacity:0;}
+}
+
+.wave_2 {
+    background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiPjxwYXRoIGZpbGw9IiM2ODZCNkQiIGQ9Ik0yNSwxMGMtNy43LDAtMTQsNi4zLTE0LDE0YzAsMy43LDEuNSw3LjIsNC4xLDkuOWMwLjUsMC41LDEuMiwwLjUsMS43LDBjMC41LTAuNSwwLjUtMS4yLDAtMS43CWMtMi4yLTIuMi0zLjQtNS4xLTMuNC04LjJjMC02LjQsNS4yLTExLjYsMTEuNi0xMS42UzM2LjYsMTcuNiwzNi42LDI0YzAsMy4xLTEuMiw2LTMuNCw4LjJjLTAuNSwwLjUtMC41LDEuMiwwLDEuNwljMC4yLDAuMiwwLjUsMC40LDAuOSwwLjRzMC42LTAuMSwwLjktMC40YzIuNi0yLjYsNC4xLTYuMSw0LjEtOS45QzM5LDE2LjMsMzIuNywxMCwyNSwxMHoiLz48L3N2Zz4=');
+    -webkit-animation:wave_2 2s infinite;
+            animation:wave_2 2s infinite;
+}
+
+@-webkit-keyframes wave_2 {
+    from {opacity:0;}
+    50%  {opacity:1;}
+    to   {opacity:0;}
+}
+
+@keyframes wave_2 {
+    from {opacity:0;}
+    50%  {opacity:1;}
+    to   {opacity:0;}
 }
 
 /* Btn - Main */

@@ -119,7 +119,11 @@
                                     <div class="moon"></div>
                                     <div class="ship"></div>
                                     <div class="exhaust"></div>
-                                    <div class="bg_image"></div>
+        				        </div>
+        				        <div id="broadcast">
+            				        <div class="satellite"></div>
+            				        <div class="wave_1"></div>
+            				        <div class="wave_2"></div>
         				        </div>
         				        <div class="btn_messages message_1">
         				            <h1>Science &amp; Creativity</h1>
@@ -154,9 +158,10 @@
     				    <div class="cols rcol">
     				        <nav id="nav_network">
     				            <ul>
-        				            <li><a href="http://twitter.com/simoncorry"  target="_blank" data-tooltip="Twitter"  class="link tooltip tooltip_footer twitter">Read Tweets by Simon Corry</a></li>
-        				            <li><a href="http://github.com/simoncorry"   target="_blank" data-tooltip="Github"   class="link tooltip tooltip_footer github">See code examples by Simon Corry</a></li>
-        				            <li><a href="http://dribbble.com/simoncorry" target="_blank" data-tooltip="Dribbble" class="link tooltip tooltip_footer dribbble">View project shots by Simon Corry</a></li>
+        				            <li><a href="http://twitter.com/simoncorry"   target="_blank" data-tooltip="Twitter"   class="link tooltip tooltip_footer twitter">Read Tweets by Simon Corry</a></li>
+        				            <li><a href="http://pinterest.com/simoncorry" target="_blank" data-tooltip="Pinterest" class="link tooltip tooltip_footer pinterest">Collect pins by Simon Corry</a></li>
+        				            <li><a href="http://github.com/simoncorry"    target="_blank" data-tooltip="Github"    class="link tooltip tooltip_footer github">See code examples by Simon Corry</a></li>
+        				            <li><a href="http://dribbble.com/simoncorry"  target="_blank" data-tooltip="Dribbble"  class="link tooltip tooltip_footer dribbble">View project shots by Simon Corry</a></li>
     				            </ul>
     				        </nav>
     				    </div>
