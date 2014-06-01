@@ -48,7 +48,7 @@
         <link type='text/css' rel='stylesheet' href='http://fonts.googleapis.com/css?family=Inconsolata:700,400'>
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="/assets/css/lib/reset.min.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css">
+        <!-- <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css"> -->
         <link type="text/css" rel="stylesheet" href="/assets/css/app/main.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/ajax_loader.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/typography.css">
@@ -67,8 +67,8 @@
         <script src="/assets/js/app/sidebar.js"></script>
         <script src="/assets/js/app/ajax.js"></script>
     </head>
-    <body id="preloader">
-    <!-- <body> -->
+    <!-- <body id="preloader"> -->
+    <body>
         <!-- Site Wrapper -->
         <div id="wrapper_site">
             <!-- Main Menu -->
@@ -154,7 +154,6 @@
     				    <div class="cols rcol">
     				        <nav id="nav_network">
     				            <ul>
-        				            <li><a href="#" data-tooltip="Share" class="tooltip tooltip_footer share">Share this site for Simon Corry</a></li>
         				            <li><a href="http://twitter.com/simoncorry"  target="_blank" data-tooltip="Twitter"  class="link tooltip tooltip_footer twitter">Read Tweets by Simon Corry</a></li>
         				            <li><a href="http://github.com/simoncorry"   target="_blank" data-tooltip="Github"   class="link tooltip tooltip_footer github">See code examples by Simon Corry</a></li>
         				            <li><a href="http://dribbble.com/simoncorry" target="_blank" data-tooltip="Dribbble" class="link tooltip tooltip_footer dribbble">View project shots by Simon Corry</a></li>
