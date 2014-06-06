@@ -8,15 +8,36 @@ $(function() {
   }
   eventtype = mobilecheck() ? 'touchend' : 'click';
   
-  // Check for Event Type on Href Links
-  /* $('a[href]').on(eventtype, function(e) { */
-  $('.link').on(eventtype, function(e) {
-    e.preventDefault();
-    a_href   = $(this).attr('href');
-    a_target = $(this).attr('target');
-    window.open(a_href,a_target);
-    console.log(a_href);
-    return false;
+  // Allow short delay for touch
+  touch_delay = function() {
+    if(eventtype == 'click'){delayed_function_name(); return;}
+    touch_delay_running = false;
+    // Set timeout
+    setTimeout(function(){touch_delay_running = true;},230);
+    // Listen for change
+    var check = function(){
+      if(touch_delay_running == true){
+        delayed_function_name();
+      } else {
+      setTimeout(check,50); // check again in a second
+        return;
+      }
+    } 
+    check();
+  }
+  
+  // Check for event type on href links
+  $('.touch_links').on(eventtype, '.touch_link', function(e) {
+    var touch_link_actions = function() {
+      e.preventDefault();
+      a_href   = $(this).attr('href');
+      a_target = $(this).attr('target');
+      window.open(a_href,a_target);
+      return false;
+    }
+    // Name unique function and start touch delay
+    delayed_function_name = touch_link_actions;
+    touch_delay();
   });
     
 });

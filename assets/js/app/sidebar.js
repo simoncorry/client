@@ -26,25 +26,32 @@ $(function() {
       $sidebar_trigger.removeClass('btn_active');
       $this.addClass('btn_active');
     }
-    // Check for active states
-    if($(this).hasClass('btn_active')) {
-      clear_pushers();
-    } else {
-      clear_pushers();
-      activate_pushers();
-    }
-    // Close sidebar via wrapper
-    $('#wrapper_site').on(eventtype,'.content_shroud', function() {
-      if (sidebar_running) {return;}
-      if($sidebar_trigger.hasClass('btn_active')) {
-        $content_pusher.removeClass();
-        $sidebar_pusher.removeClass('pusher_active');
-        $sidebar_trigger.removeClass('btn_active'); 
+    var sidebar_actions = function() {
+      // Check for active states
+      if($(this).hasClass('btn_active')) {
+        clear_pushers();
+      } else {
+        clear_pushers();
+        activate_pushers();
       }
-    });
+      // Close sidebar via wrapper
+      $('#wrapper_site').on(eventtype,'.content_shroud', function() {
+        if (sidebar_running) {return;}
+        if($sidebar_trigger.hasClass('btn_active')) {
+          $content_pusher.removeClass();
+          $sidebar_pusher.removeClass('pusher_active');
+          $sidebar_trigger.removeClass('btn_active'); 
+        }
+      });
+    }
     // Remove running true
     $content_pusher.one('webkittransitionEnd transitionend', function(e) {
       sidebar_running = false;
     });
+    
+    // Name unique function and start touch delay
+    delayed_function_name = sidebar_actions;
+    touch_delay();
+    
   });
 });

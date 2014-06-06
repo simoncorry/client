@@ -73,7 +73,7 @@
         <div id="wrapper_site">
             <!-- Main Menu -->
 			<nav id="sidebar_main" data-sidebar="sidebar_main" class="sidebar_pusher">
-				<ul>
+				<ul class="ajax_links">
 					<li><a href="home.html" class="ajax_load">Home</a></li>
 					<li><a href="test.html" class="ajax_load">Test</a></li>
 					<li><a href="test.html" class="ajax_load">Test</a></li>
@@ -89,7 +89,7 @@
 			</nav>
 			<!-- Stream Menu -->
 			<nav id="sidebar_stream" data-sidebar="sidebar_stream" class="sidebar_pusher">
-				<ul>
+				<ul class="ajax_links">
 					<li><a href="test.html" class="ajax_load">Test</a></li>
 					<li><a href="test.html" class="ajax_load">Test</a></li>
 					<li><a href="test.html" class="ajax_load">Test</a></li>
@@ -156,15 +156,15 @@
 				            <h3>Footer Links</h3>
 				        </div>
     				    <div class="cols rcol">
-    				        <nav id="nav_network">
+    				        <nav id="nav_network" class="touch_links">
     				            <ul>
-        				            <li><a href="http://twitter.com/simoncorry"     target="_blank" data-tooltip="Twitter"   class="link tooltip tooltip_footer twitter">Read Tweets by Simon Corry</a></li>
-        				            <li><a href="http://dribbble.com/simoncorry"    target="_blank" data-tooltip="Dribbble"  class="link tooltip tooltip_footer dribbble">View project shots by Simon Corry</a></li>      
-        				            <li><a href="http://github.com/simoncorry"      target="_blank" data-tooltip="Github"    class="link tooltip tooltip_footer github">See code examples by Simon Corry</a></li>
-        				            <li><a href="http://linkedin.com/in/simoncorry" target="_blank" data-tooltip="Linkedin"  class="link tooltip tooltip_footer linkedin">Connect with Simon Corry</a></li>
-        				            <!--
-                                    <li><a href="http://pinterest.com/simoncorry"   target="_blank" data-tooltip="Pinterest" class="link tooltip tooltip_footer pinterest">Collect pins by Simon Corry</a></li>
-        				            <li><a href="http://behance.net/simoncorry"     target="_blank" data-tooltip="Behance"   class="link tooltip tooltip_footer behance">View projects by Simon Corry</a></li>
+        				            <li><a href="http://twitter.com/simoncorry"     target="_blank" data-tooltip="Twitter"   class="touch_link tooltip tooltip_footer twitter">Read Tweets by Simon Corry</a></li>
+        				            <li><a href="http://dribbble.com/simoncorry"    target="_blank" data-tooltip="Dribbble"  class="touch_link tooltip tooltip_footer dribbble">View project shots by Simon Corry</a></li>      
+        				            <li><a href="http://github.com/simoncorry"      target="_blank" data-tooltip="Github"    class="touch_link tooltip tooltip_footer github">See code examples by Simon Corry</a></li>
+        				            <li><a href="http://linkedin.com/in/simoncorry" target="_blank" data-tooltip="Linkedin"  class="touch_link tooltip tooltip_footer linkedin">Connect with Simon Corry</a></li>
+        				            <!--                                                                                            
+                                    <li><a href="http://pinterest.com/simoncorry"   target="_blank" data-tooltip="Pinterest" class="touch_link tooltip tooltip_footer pinterest">Collect pins by Simon Corry</a></li>
+        				            <li><a href="http://behance.net/simoncorry"     target="_blank" data-tooltip="Behance"   class="touch_link tooltip tooltip_footer behance">View projects by Simon Corry</a></li>
                                     -->
     				            </ul>
     				        </nav>
