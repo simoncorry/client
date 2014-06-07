@@ -28,10 +28,10 @@ $(function() {
   
   // Check for event type on href links
   $('.touch_links').on(eventtype, '.touch_link', function(e) {
+    e.preventDefault();
+    a_href   = $(this).attr('href');
+    a_target = $(this).attr('target');
     var touch_link_actions = function() {
-      e.preventDefault();
-      a_href   = $(this).attr('href');
-      a_target = $(this).attr('target');
       window.open(a_href,a_target);
       return false;
     }

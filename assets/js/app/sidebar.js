@@ -28,14 +28,14 @@ $(function() {
     }
     var sidebar_actions = function() {
       // Check for active states
-      if($(this).hasClass('btn_active')) {
+      if($this.hasClass('btn_active')) {
         clear_pushers();
       } else {
         clear_pushers();
         activate_pushers();
       }
       // Close sidebar via wrapper
-      $('#wrapper_site').on(eventtype,'.content_shroud', function() {
+      $('#wrapper_site').on(eventtype,'.content_shroud, .btn_close_nav', function() {
         if (sidebar_running) {return;}
         if($sidebar_trigger.hasClass('btn_active')) {
           $content_pusher.removeClass();

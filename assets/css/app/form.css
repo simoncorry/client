@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+#contact_form {
+    height:auto;
+    padding:0 40px;
+    overflow-x:hidden;
+}
+
+#contact_form input,
+#contact_form textarea {
+    background-color:transparent;
+    height:54px;
+    width:100%;
+    border:none;
+    border-bottom:1px solid rgb(77,128,126);
+    border-radius:0;
+    margin-bottom:10px;
+    outline:none; 
+    resize:none;
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+            box-sizing:border-box;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+    /* Text */
+    font-family:'Inconsolata',sans-serif;
+    font-style:normal;
+    font-size:1.8rem;
+    font-weight:400;
+    letter-spacing:0.1rem;
+    color:rgb(242,239,223);
+    text-decoration:none;
+}
+
+#contact_form textarea {
+    padding-top:20px;
+    -webkit-transform:translate3d(0,0,0);
+    -webkit-backface-visibility:hidden;
+    -webkit-perspective:1000;
+    -webkit-transition:height 0.2s ease-in-out;
+    	    transition:height 0.2s ease-in-out;
+}
+
+#contact_form input::-webkit-input-placeholder,
+#contact_form textarea::-webkit-input-placeholder {
+    color:rgb(242,239,223);
+    -webkit-transition:color 0.2s ease-in-out;
+    	    transition:color 0.2s ease-in-out;
+}
+#contact_form input:-moz-placeholder,
+#contact_form textarea:-moz-placeholder {
+    color:rgb(242,239,223);
+    -webkit-transition:color 0.2s ease-in-out;
+    	    transition:color 0.2s ease-in-out;
+}
+#contact_form input::placeholder,
+#contact_form textarea::placeholder {
+    color:rgb(242,239,223);
+    -webkit-transition:color 0.2s ease-in-out;
+    	    transition:color 0.2s ease-in-out;
+}
+
+#contact_form input:focus::-webkit-input-placeholder,
+#contact_form textarea:focus::-webkit-input-placeholder {color:rgba(242,239,223,0.2);}
+#contact_form input:focus::-moz-placeholder,
+#contact_form textarea:focus::-moz-placeholder {color:rgba(242,239,223,0.2);}
+#contact_form input:focus::placeholder,
+#contact_form textarea:focus::placeholder {color:rgba(242,239,223,0.2);}
+
+#contact_form input[type=submit] {cursor:pointer;}
+
+.form_submit {
+    float:right;
+    width:auto !important;
+    border:none !important;
+    text-align:center;
+    -webkit-transition:color 0.2s ease-in-out;
+    	    transition:color 0.2s ease-in-out;
+}
+.form_submit:hover {color:rgb(255,255,255) !important;}

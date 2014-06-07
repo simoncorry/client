@@ -14,3 +14,6 @@ $(function() {
     s_square_4  : 'rgb(89,51,37)',    // Bottom Right 
   });
 });
+
+// Textarea Resize
+$(function(){$('.animated').autosize();});

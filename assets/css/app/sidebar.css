@@ -102,29 +102,6 @@
             transform:translate3d(0,0,0);
 }
 
-/* Menu Styles */
-
-.sidebar_pusher ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.sidebar_pusher h2 {
-    margin: 0;
-    padding: 1em;
-    color: rgba(0,0,0,0.4);
-    font-weight: 300;
-    font-size: 2em;
-}
-
-.sidebar_pusher ul li a {
-    display: block;
-    padding: 1em 1em 1em 1.2em;
-    outline: none;
-    color: #f3efe0;
-}
-
 
 /* RESPONSIVE ADJUSTMENTS */
 

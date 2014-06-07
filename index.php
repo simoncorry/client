@@ -54,6 +54,8 @@
         <link type="text/css" rel="stylesheet" href="/assets/css/app/typography.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/tooltips.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/sidebar.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/nav.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/form.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/header.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/footer.css">
         <!-- JS -->
@@ -61,11 +63,12 @@
         <script src="/assets/js/lib/modernizr.js"></script>
         <script src="/assets/js/lib/google-analytics.js"></script>
         <script src="/assets/js/lib/jquery.preloader-1.2.js"></script>
+        <script src="/assets/js/lib/jquery.autosize.min.js"></script>
         <script src="/assets/js/app/plugins.js"></script>
         <script src="/assets/js/app/mobile_check.js"></script>
         <script src="/assets/js/app/scripts.js"></script>
         <script src="/assets/js/app/sidebar.js"></script>
-        <script src="/assets/js/app/ajax.js"></script>
+        <script src="/assets/js/app/ajax.js"></script>      
     </head>
     <!-- <body id="preloader"> -->
     <body>
@@ -73,35 +76,44 @@
         <div id="wrapper_site">
             <!-- Main Menu -->
 			<nav id="sidebar_main" data-sidebar="sidebar_main" class="sidebar_pusher">
-				<ul class="ajax_links">
-					<li><a href="home.html" class="ajax_load">Home</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-				</ul>
+				<div class="nav_block">
+    			    <h2>Chapters</h2>
+    				<ul id="nav_main" class="ajax_links">
+    					<li><a href="home.html" class="ajax_load active_page">01. Prologue</a></li>
+    					<li><a href="test.html" class="ajax_load">02. Introduction</a></li>
+    					<li><a href="test.html" class="ajax_load">03. Expression</a></li>
+    					<li><a href="test.html" class="ajax_load">04. Moments</a></li>
+    				</ul>
+    				<a id="btn_close_main" class="btn_close_nav"></a>
+				</div>
+				<div class="nav_block">
+    			    <h2>Contact</h2>
+    			    <form id="contact_form" class="clearfix">
+        			    <input type="text" name="name" placeholder="Name:">
+        			    <input type="email" name="email" placeholder="Email:">
+        			    <textarea name="thoughts" class='animated' placeholder="Thoughts:"></textarea>
+        			    <input type="submit" value="- Submit -" class="form_submit">
+    			    </form>
+				</div>
+				<div class="nav_block">
+    			    <h2>Share</h2>
+				</div>
 			</nav>
 			<!-- Stream Menu -->
 			<nav id="sidebar_stream" data-sidebar="sidebar_stream" class="sidebar_pusher">
-				<ul class="ajax_links">
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-					<li><a href="test.html" class="ajax_load">Test</a></li>
-				</ul>
+                <ul class="ajax_links">
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                    <li><a href="test.html" class="ajax_load">Test</a></li>
+                </ul>
 			</nav>
 			<!-- Content Wrapper -->
 			<div id="content_pusher">
