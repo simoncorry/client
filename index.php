@@ -92,7 +92,7 @@
         			    <input type="text" name="name" placeholder="Name:">
         			    <input type="email" name="email" placeholder="Email:">
         			    <textarea name="thoughts" class='animated' placeholder="Thoughts:"></textarea>
-        			    <input type="submit" value="- Submit -" class="form_submit">
+        			    <input type="submit" value="- Send -" class="form_submit">
     			    </form>
 				</div>
 				<div class="nav_block">
