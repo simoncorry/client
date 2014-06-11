@@ -97,6 +97,19 @@
 				</div>
 				<div class="nav_block">
     			    <h2>Share</h2>
+    			    <ul id="nav_share" class="clearfix"> 			        
+    					<li class="share_twitter">
+    					    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-url="http://simoncorry.com" data-text="Checkout the new home of science &amp; creativity." data-via="simoncorry" data-count="none"></a>
+                        </li>
+    					<li class="share_facebook">
+    			            <div class="fb_wrapper">
+    			                <fb:share-button href="http://simoncorry.com" type="button"></fb:share-button>
+                            </div>
+                        </li>
+    					<li class="share_gplus">
+    					    <a href="https://plus.google.com/share?url={http://simoncorry.com}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="https://www.gstatic.com/images/icons/gplus-64.png" alt="Share on Google+"/></a>
+                        </li>
+    				</ul>
 				</div>
 			</nav>
 			<!-- Stream Menu -->
@@ -185,5 +198,16 @@
 				</div>
 			</div>
 		</div>
+		<!-- Share Buttons -->
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<div id="fb-root"></div>
+        <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=663902337028476&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+        <script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
     </body>
 </html>

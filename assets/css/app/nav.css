@@ -35,7 +35,7 @@
 
 /* Nav Main */
 
-#nav_main ul {display:none;}
+#nav_main {list-style-type:none;}
 
 #nav_main a {
     display:block;
@@ -62,6 +62,57 @@
     pointer-events:none;
 }
 
+/* Nav Main */
+
+#nav_share {
+    padding:0 40px;
+    list-style-type:none;
+}
+
+#nav_share li {
+    position:relative;
+    width:100%;
+    height:30px;
+    margin-bottom:10px;
+    overflow:hidden;
+    -webkit-transition:color 0.2s ease-in-out;
+    transition:        color 0.2s ease-in-out;
+    /* Text */
+    font-size:1.8rem;
+    font-weight:400;
+    letter-spacing:0.1rem;
+    color:rgb(242,239,223);
+    text-decoration:none;
+    
+}
+.no-touch #nav_share li:hover {color:rgb(255,255,255) !important;}
+
+
+#nav_share li::before {
+    z-index:8;
+    position:absolute;
+    top:0; left:0;
+    background-color:rgb(84,135,133);
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    content:'';
+}
+
+#nav_share li::after {
+    z-index:9 !important;
+    position:absolute !important;
+    top:0 !important; left:0 !important;
+    background:center center no-repeat;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    content:'';
+}
+
+#nav_share li.share_twitter::after {content:'Twitter';}
+#nav_share li.share_facebook::after {content:'Facebook';}
+#nav_share li.share_gplus::after {content:'Google+';}
 
 /* RESPONSIVE ADJUSTMENTS */
 
