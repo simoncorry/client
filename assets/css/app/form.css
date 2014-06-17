@@ -48,25 +48,33 @@
     -webkit-transition:color 0.2s ease-in-out;
     	    transition:color 0.2s ease-in-out;
 }
+.no-touch #contact_form input:hover::-webkit-input-placeholder,
+.no-touch #contact_form textarea:hover::-webkit-input-placeholder {color:rgb(255,255,255);}
+
 #contact_form input:-moz-placeholder,
 #contact_form textarea:-moz-placeholder {
     color:rgb(242,239,223);
     -webkit-transition:color 0.2s ease-in-out;
     	    transition:color 0.2s ease-in-out;
 }
+.no-touch #contact_form input:hover:-moz-placeholder,
+.no-touch #contact_form textarea:hover:-moz-placeholder {color:rgb(255,255,255);}
+
 #contact_form input::placeholder,
 #contact_form textarea::placeholder {
     color:rgb(242,239,223);
     -webkit-transition:color 0.2s ease-in-out;
     	    transition:color 0.2s ease-in-out;
 }
+.no-touch #contact_form input:hover::placeholder,
+.no-touch #contact_form textarea:hover::placeholder {color:rgb(255,255,255);}
 
 #contact_form input:focus::-webkit-input-placeholder,
-#contact_form textarea:focus::-webkit-input-placeholder {color:rgba(242,239,223,0.2);}
+#contact_form textarea:focus::-webkit-input-placeholder {color:rgba(242,239,223,0.2) !important;}
 #contact_form input:focus::-moz-placeholder,
-#contact_form textarea:focus::-moz-placeholder {color:rgba(242,239,223,0.2);}
+#contact_form textarea:focus::-moz-placeholder {color:rgba(242,239,223,0.2) !important;}
 #contact_form input:focus::placeholder,
-#contact_form textarea:focus::placeholder {color:rgba(242,239,223,0.2);}
+#contact_form textarea:focus::placeholder {color:rgba(242,239,223,0.2) !important;}
 
 #contact_form input[type=submit] {cursor:pointer;}
 
